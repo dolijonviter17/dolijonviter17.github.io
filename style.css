@@ -13,32 +13,126 @@
 
 body {
     font-family: "Heebo", sans-serif;
-    min-height: 100vh;
-    
-    background: linear-gradient(to right, #333399, #ff00cc);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
 }
-
-.card-container {
-    margin : 50px auto;
-    width: 80%;
-}
-
-
 
 ::before, ::after{
     box-sizing: border-box;
 }
 
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #ff00cc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    /* width: 100%; */
+    background: rgba(255, 255,255, .5);
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+
+}
+
+.gambar {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 1px solid rgb(235, 208, 208);
+    border-radius: 20%;
+    padding: 5px;
+
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color :#333399;
+    font-famisly: sans-serif;
+}
+
+
+.social-media{
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.fa_custome {
+    color: #0099CC;
+    margin: 5px 5px;
+}
+
+/* About Me */
+
+
+
+
+/* About Me */
+
+
+/* Data Diri */
+.datadiri { 
+    margin: 0px 20px;
+    
+    
+}
+.datadiri-item{
+    display: flex;
+    min-width: 100px;
+    justify-content: space-between;
+
+}
+.datadiri-item-value{
+    margin-left: 15px;
+}
+
+/* Data Diri */
+
+/* Skills */
+.skllis{
+    
+}
+.tools {
+}
+.skills-item p {
+     margin-top: 5px;
+}
+.skills-wrapper {
+    width: 400px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Skills */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .profil-card {
-    /* min-width: 300px;
-    min-height: 200px; */
     align-self: center;
     background: rgba(255, 255,255, .5);
     padding: 2rem;
@@ -57,15 +151,7 @@ body {
 
 }
 
-.gambar {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border: 1px solid rgb(235, 208, 208);
-    border-radius: 20%;
-    padding: 5px;
 
-}
 img:hover{
     box-shadow: 0 0 2px 1px rgba(0. 140, 186, 0.5);
 }
@@ -82,7 +168,15 @@ img:hover{
     justify-content: space-between;
 
 }
+.gambar {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 1px solid rgb(235, 208, 208);
+    border-radius: 20%;
+    padding: 5px;
 
+}
 
 .link-items {
     background-color: azure;
@@ -104,12 +198,7 @@ img:hover{
     /* margin: 0px 10px; */
 }
 
-.social-media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 h1 {
@@ -123,10 +212,7 @@ h3 {
     color :#030305;
 }
 
-.fa_custome {
-    color: #0099CC;
-    margin: 5px 0px;
-}
+
 
 span {
     opacity: 0;
@@ -145,8 +231,8 @@ span.fade{
 .project-wrapper{
     align-self: center;
     margin-top: 15px;
-    min-width: 300px;
-    min-height: 200px;
+    /* min-width: 300px;
+    min-height: 200px; */
     background: rgba(255, 255,255, .5);
     padding: 2rem;
     border-radius: 10px; 
@@ -199,8 +285,82 @@ span.fade{
 }   
 
 
-@media (min-width: 900px) {
 
+
+
+
+
+
+/* About Me */
+
+.about-container {
+
+    
+
+}
+
+
+.project-items {
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+
+
+/* About Me */
+
+
+@media (max-width: 900px) {
+    .profil-card {
+        /* min-width: 300px;
+        min-height: 200px; */
+        width: 90%;
+        align-self: center;
+        background: rgba(255, 255,255, .5);
+        padding: 2rem;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        /* justify-content: space-between;     */
+    }
+
+    .links-wrapper{
+        margin-top: 20px;
+        /* width: 70%; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px 0;
+    }
+
+    .gambar {
+        height: 200px;
+        width: 80%;
+        width: 100%;
+        /* object-fit: cover; */
+        border: 1px solid rgb(235, 208, 208);
+        border-radius: 20%;
+        padding: 5px;
+    
+    }
+
+    .link-items {
+        background-color: azure;
+        padding: 4px 10px;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
 }
 
 
